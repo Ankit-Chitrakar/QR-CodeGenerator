@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(28, 111, 236);
+}
+.mainBox{
+    /* background-color: red; */
+    background: #fff;
+    max-width: 450px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    height: 251px;
+}
+header{
+    padding-left: 10%;
+    display: inline;
+}
+header h1{
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+}
+header p{
+    font-size: 13px;
+    color: rgb(95, 93, 93);
+    margin: 0px 5px 10px 55px;
+}
+hr{
+    height: 2px;
+    background-color:black;
+}
+.form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#URLInput{
+    min-height: 40px;
+    padding: 0px 10px;
+    border-radius: 8px;
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+#generateBtn{
+    min-height: 40px;
+    padding: 0px 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: none;
+    background: rgb(28, 111, 236);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    min-height: 40px;
+}
+.img{
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 230px;
+    max-width: 1000px;
+    background-color: rgb(220, 233, 236);
+    border-radius: 6px;
+}
+.qrImg{
+    width: 50%;
+    height: 50%;
+}
+/* #. .active #qrImg{
+    opacity: 1; 
+} */
+.active{
+    background: #fff;
+    max-width: 450px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    height: 470px;
+    transition: height 0.25s ease;
+}
+.active .img{
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 210px;
+    max-width: 1000px;
+    background-color: rgb(220, 233, 236);
+    border-radius: 6px;
+}
+.active .qrImg{
+    width: 50%;
+    height: 50%;
+}
